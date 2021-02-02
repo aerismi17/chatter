@@ -1,16 +1,16 @@
 .App {
   text-align: center;
-  background: #B993D6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;  /* fallback for old browsers */
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header{
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
   height: 10%; 
   display: flex;
   align-items: center;
@@ -28,4 +28,75 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.text-input{
+  height: 7%; 
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input{
+  padding: 12px 20px;
+  background-color:rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  max-width: 100%;
+  margin-right: 20px;
+  flex-grow: 2;
+  font-size: 1rem;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+}
+
+.button{
+  margin-left: -75px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 50px;
+  background-color: rgb(83, 88, 163);
+  border: none;
+  border-radius: 150px;
+  color: white;
+  outline: none;
+}
+.messages{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+}
+.message{
+  padding: 12px 20px;
+  margin-left: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  border: none;
+  text-align: left;
+  width: fit-content;
+  margin-right: 75px;
 }
