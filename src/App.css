@@ -80,14 +80,16 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   color: white;
   outline: none;
 }
+
 .messages{
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column-reverse;
+  align-items: flex-start;
   height: 100%;
+  overflow: auto;
 }
+
 .message{
   padding: 12px 20px;
   margin-left: 25px;
@@ -99,4 +101,5 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   text-align: left;
   width: fit-content;
   margin-right: 75px;
+  margin-bottom: 10px;
 }
