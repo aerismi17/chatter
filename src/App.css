@@ -15,6 +15,12 @@
   display: flex;
   align-items: center;
   padding: 0 25px;
+  justify-content: space-between;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: bolder;
   color: white; 
@@ -28,6 +34,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.name-picker{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.name{
+  color: white;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.nameChange{
+  outline: none;
+  margin-right: 5px;
+  background-color:rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  border-bottom: 2px rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  max-width: 30%;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.sendForm{
+  background-color: rgb(83, 88, 163);
+  border-radius: 150px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 .text-input{
@@ -49,6 +89,7 @@
   margin-right: 20px;
   flex-grow: 2;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 input::-webkit-input-placeholder { /* WebKit browsers */
@@ -79,6 +120,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   border-radius: 150px;
   color: white;
   outline: none;
+  cursor: pointer;
 }
 
 .messages{
@@ -88,6 +130,18 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   align-items: flex-start;
   height: 100%;
   overflow: auto;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message-name{
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .message{
@@ -103,3 +157,4 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   margin-right: 75px;
   margin-bottom: 10px;
 }
+
